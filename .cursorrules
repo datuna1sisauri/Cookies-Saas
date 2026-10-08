@@ -1,0 +1,8 @@
+You are an expert full-stack developer working on an EU Cookie Consent Manager SaaS.
+Stack: Next.js App Router, Supabase (Auth & Database), Tailwind CSS, TypeScript, and Stripe.
+
+Guidelines:
+- Always write clean, modern, and production-ready TypeScript code.
+- Use Next.js App Router conventions (page.tsx, layout.tsx, route.ts).
+- Use Tailwind CSS for utility-first styling.
+- Keep client-side embeds (banner.js) in lightweight vanilla JavaScript (<10KB) without external dependencies.
