@@ -82,11 +82,11 @@
     }
 
     function renderBanner(settings) {
-      if (localStorage.getItem(STORAGE_KEY)) {
-        const isGranted = localStorage.getItem(STORAGE_KEY) === 'granted';
-        applyConsent(isGranted);
-        return;
-      }
+      // if (localStorage.getItem(STORAGE_KEY)) {
+      //   const isGranted = localStorage.getItem(STORAGE_KEY) === 'granted';
+      //   applyConsent(isGranted);
+      //   return;
+      // }
 
       const primary = safeColor(settings.primary_color, DEFAULT_SETTINGS.primary_color);
       const secondary = safeColor(settings.secondary_color, DEFAULT_SETTINGS.secondary_color);
@@ -141,13 +141,13 @@
 
       // Event Listeners
       document.getElementById('cb-accept').addEventListener('click', function () {
-        localStorage.setItem(STORAGE_KEY, 'granted');
+        // localStorage.setItem(STORAGE_KEY, 'granted');
         applyConsent(true);
         banner.remove();
       });
 
       document.getElementById('cb-reject').addEventListener('click', function () {
-        localStorage.setItem(STORAGE_KEY, 'denied');
+        // localStorage.setItem(STORAGE_KEY, 'denied');
         applyConsent(false);
         banner.remove();
       });
