@@ -239,7 +239,7 @@ export default function DashboardPage() {
 
                   <p className="text-xs text-zinc-400 mb-2 font-mono">Embed Script Code:</p>
                   <div className="bg-zinc-950 p-4 rounded-lg font-mono text-xs border border-zinc-800 text-zinc-300 overflow-x-auto mb-6">
-                    {`<script src="${process.env.NEXT_PUBLIC_SUPABASE_URL ? 'http://localhost:3000' : ''}/banner.js" data-site-id="${domain.id}" defer></script>`}
+                    {`<script src="${process.env.NEXT_PUBLIC_SUPABASE_URL ? 'https://cookies-saas.vercel.app' : ''}/banner.js" data-site-id="${domain.id}" defer></script>`}
                   </div>
 
                   <div className="border-t border-zinc-800 pt-5">
